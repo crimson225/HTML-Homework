@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+
+    <link rel="stylesheet" type="text/css" href="css1.css">
+
+</head>
+<body>
+
+<nav>
+    <strong><p>Latitude</p></strong>
+    <ul>
+        <li><a href="Landing.html">Home</a></li>
+        <li><a href="#">Plots</a>
+            <ul>
+                <li><a href="Temp.html">Max Temperature</a></li>
+                <li><a href="Humid.html">Humidity</a></li>
+                <li><a href="Cloud.html">Cloudiness</a></li>
+                <li><a href="Wind.html">Windspeed</a></li>
+            </ul>
+        </li>
+        <li><a href="Compare.html">Comparison</a></li>
+        <li><a href="Data.html">Data</a></li>
+
+    </ul>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="box">
+                <h1>Cloudiness vs Latitude</h1>
+                <hr>
+                <img src="images/CloudVsLat.png">
+                <p> This graph is interesting. The lines across at the even percentages of clouds show an interesting pattern.
+                    THere doesnt seem to be much of an overarching trend ofther than the larger grouping of points in the northern
+                    hemisphere section of the data, which we've determinded was because thats where the majority of the cities were called from.
+                    There seems to be about the same split between north and south as the humidity comparison. 
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class = "box">
+                <h3>Visualizations</h3>
+                <hr>
+                <div class = "col"><a href="Temp.html"><img src="images/TempVsLat.png" style="width: 256px;height: 256px;"></a></div>
+                <div class = "col"><a href="Wind.html"><img src="images/WindVsLat.png" style="width: 256px;height: 256px;"></a></div>
+                <div class = "col"><a href="Cloud.html"><img src="images/CloudVsLat.png" style="width: 256px;height: 256px;"></a></div>
+                <div class = "col"><a href="Humid.html"><img src="images/HumidVsLat.png" style="width: 256px;height: 256px;"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
